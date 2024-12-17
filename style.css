@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&family=Ruge+Boogie&display=swap');
+
+
+body{
+    background-image: url('wow.jpg');
+    background-size: cover;
+}
+
+.container{
+    margin: 30px auto;
+    max-width: 90%;
+    text-align: center;
+    padding: 5px;
+    /* box-shadow: 0 0 10px rgb(81, 226, 132); */
+}
+
+.title{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Ruge Boogie", cursive;
+}
+
+.timer{
+    font-size: 150px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#start, #stop, #reset {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-color: white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+#start:hover, #stop:hover, #reset:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#pomodoro, #short-break, #long-break {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+#pomodoro:hover, #short-break:hover, #long-break:hover{
+    background-color: white;
+    color: black;
+}
+
+#stop[disabled], #start[disabled]{
+    background-color: transparent;
+    color: white;
+    cursor: default;
+}
+
+#pomodoro[disabled], #short-break[disabled], #long-break[disabled]{
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+
+@media (max-width: 600px) {
+    #pomodoro, #short-break, #long-break {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    #start, #stop, #reset {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
